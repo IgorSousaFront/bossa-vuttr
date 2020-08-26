@@ -1,11 +1,20 @@
 <template>
-  <div>
-    <h1>Tipografia</h1>
-    <h2>Tipografia</h2>
-    <h3>Tipografia</h3>
-    <h4>Tipografia</h4>
-    <h5>Tipografia</h5>
-    <h6>Tipografia</h6>
-    <p>Tipografia</p>
+  <div class="container">
+    <div class="wrapper">
+      <h1>Tipografia</h1>
+      <h2>Tipografia</h2>
+      <h3>Tipografia</h3>
+      <h4>Tipografia</h4>
+      <h5>Tipografia</h5>
+      <h6>Tipografia</h6>
+      <p>Tipografia</p>
+    </div>
   </div>
 </template>
+
+<style lang="scss">
+  .wrapper {
+    margin: 100px 0 40px;
+  }
+</style>
+

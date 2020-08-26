@@ -1,0 +1,18 @@
+// Set the variable names
+// The variable names use the notation $x-y
+// x = property => (if 'color' use 'c', if 'font' use 'f'...)
+// y = reference => (if the main color use something like 'base' or 'main')
+// ie1 $c-main: #ff0000;
+// ie2 $f-body: 'Source Sans Pro', sans-serif;
+
+// Colors
+$c-base: #365DF0;
+$c-base-darker: #244AA8;
+$c-base-lighten: #9AAEF7;
+$c-success: #12DB89;
+$c-error: #F95E5A;
+$c-fonts: #170C3A;
+$c-theme: $c-base-darker;
+
+// Fonts
+$f-body: 'Source Sans Pro', sans-serif;

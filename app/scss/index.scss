@@ -1,5 +1,11 @@
+// Import Variables values
+@import './variables/style';
+
 // Import Reset rules
 @import './reset/style';
+
+// Import Helpers
+@import './helpers/style';
 
 // Import Tipography
 @import './tipography/style';
