@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/IgorSousaFront/bossa-vuttr#readme",
   "dependencies": {
+    "axios": "^0.20.0",
     "nuxt": "^2.14.3",
     "vue": "^2.6.12"
   },

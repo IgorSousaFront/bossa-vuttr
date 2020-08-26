@@ -1,20 +1,57 @@
 <template>
   <div class="container">
     <div class="wrapper">
-      <h1>Tipografia</h1>
-      <h2>Tipografia</h2>
-      <h3>Tipografia</h3>
-      <h4>Tipografia</h4>
-      <h5>Tipografia</h5>
-      <h6>Tipografia</h6>
-      <p>Tipografia</p>
+      <Header nameBrand="Vuttr" descriptions="Very Useful Tools to Remember"/>
+      <h1>{{ info }}</h1>
+      <section class="search-bar">
+        <div class="search">
+          <input type="search">
+          <input type="checkbox" id="tags-only">
+          <label for="tags-only">Search in tags only</label>
+        </div>
+        <div class="add-button">
+          <button>
+            Add
+          </button>
+        </div>
+      </section>
     </div>
   </div>
 </template>
 
-<style lang="scss">
-  .wrapper {
-    margin: 100px 0 40px;
+<script>
+import Header from '~/components/Header'
+const axios = require('axios').default;
+
+export default {
+  components: {
+    Header
+  },
+  data() {
+    return {
+      info: null
+    }
+  },
+  mounted () {
+    axios
+      .get('http://localhost:3000/tools')
+      .then(response => (this.info = response))
   }
+}
+</script>
+
+<style lang="scss">
+.wrapper {
+  margin: 100px 0 40px;
+}
+
+header {
+  padding: 30px 0;
+}
+
+.header-brand {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
 </style>
 
